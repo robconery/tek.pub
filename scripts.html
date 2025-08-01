@@ -1,0 +1,414 @@
+---
+title: peep Script Builder
+layout: default
+---
+{% assign architecture_design_scripts = site.api | where:"group","Architecture & Design"%}
+{% assign backend_development_scripts = site.api | where:"group","Backend Development"%}
+{% assign bonus_templates_scripts = site.api | where:"group","Bonus Templates"%}
+{% assign bug_fixing_debugging_scripts = site.api | where:"group","Bug Fixing & Debugging"%}
+{% assign code_generation_creation_scripts = site.api | where:"group","Code Generation & Creation"%}
+{% assign code_quality_standards_scripts = site.api | where:"group","Code Quality & Standards"%}
+{% assign code_review_analysis_scripts = site.api | where:"group","Code Review & Analysis"%}
+{% assign configuration_management_scripts = site.api | where:"group","Configuration Management"%}
+{% assign data_analysis_processing_scripts = site.api | where:"group","Data Analysis & Processing"%}
+{% assign database_data_scripts = site.api | where:"group","Database & Data"%}
+{% assign devops_deployment_scripts = site.api | where:"group","DevOps & Deployment"%}
+{% assign documentation_scripts = site.api | where:"group","Documentation"%}
+{% assign emergency_response_scripts = site.api | where:"group","Emergency Response"%}
+{% assign frontend_development_scripts = site.api | where:"group","Frontend Development"%}
+{% assign integration_apis_scripts = site.api | where:"group","Integration & APIs"%}
+{% assign migration_upgrade_scripts = site.api | where:"group","Migration & Upgrade"%}
+{% assign mobile_development_scripts = site.api | where:"group","Mobile Development"%}
+{% assign monitoring_logging_scripts = site.api | where:"group","Monitoring & Logging"%}
+{% assign performance_optimization_scripts = site.api | where:"group","Performance Optimization"%}
+{% assign security_scripts = site.api | where:"group","Security"%}
+{% assign testing_scripts = site.api | where:"group","Testing"%}
+
+<div class="wrapper">
+  <section class="section section-lg">
+    <section class="section">
+      <img src="/assets/img/path4.png" class="path">
+      <div class="container" id="app">
+        
+        <!-- Architecture & Design -->
+        {% if architecture_design_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center p-25">Architecture & Design</h2>
+            {% for script in architecture_design_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Backend Development -->
+        {% if backend_development_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Backend Development</h2>
+            {% for script in backend_development_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Bonus Templates -->
+        {% if bonus_templates_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Bonus Templates</h2>
+            {% for script in bonus_templates_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Bug Fixing & Debugging -->
+        {% if bug_fixing_debugging_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Bug Fixing & Debugging</h2>
+            {% for script in bug_fixing_debugging_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Code Generation & Creation -->
+        {% if code_generation_creation_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Code Generation & Creation</h2>
+            {% for script in code_generation_creation_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Code Quality & Standards -->
+        {% if code_quality_standards_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Code Quality & Standards</h2>
+            {% for script in code_quality_standards_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Code Review & Analysis -->
+        {% if code_review_analysis_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Code Review & Analysis</h2>
+            {% for script in code_review_analysis_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Configuration Management -->
+        {% if configuration_management_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Configuration Management</h2>
+            {% for script in configuration_management_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Data Analysis & Processing -->
+        {% if data_analysis_processing_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Data Analysis & Processing</h2>
+            {% for script in data_analysis_processing_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Database & Data -->
+        {% if database_data_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Database & Data</h2>
+            {% for script in database_data_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- DevOps & Deployment -->
+        {% if devops_deployment_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">DevOps & Deployment</h2>
+            {% for script in devops_deployment_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Documentation -->
+        {% if documentation_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Documentation</h2>
+            {% for script in documentation_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Emergency Response -->
+        {% if emergency_response_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Emergency Response</h2>
+            {% for script in emergency_response_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Frontend Development -->
+        {% if frontend_development_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Frontend Development</h2>
+            {% for script in frontend_development_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Integration & APIs -->
+        {% if integration_apis_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Integration & APIs</h2>
+            {% for script in integration_apis_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Migration & Upgrade -->
+        {% if migration_upgrade_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Migration & Upgrade</h2>
+            {% for script in migration_upgrade_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Mobile Development -->
+        {% if mobile_development_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Mobile Development</h2>
+            {% for script in mobile_development_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Monitoring & Logging -->
+        {% if monitoring_logging_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Monitoring & Logging</h2>
+            {% for script in monitoring_logging_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Performance Optimization -->
+        {% if performance_optimization_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Performance Optimization</h2>
+            {% for script in performance_optimization_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Security -->
+        {% if security_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Security</h2>
+            {% for script in security_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Testing -->
+        {% if testing_scripts.size > 0 %}
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center" style="margin-top:24px">Testing</h2>
+            {% for script in testing_scripts %}
+            <ul class="list-group list-group-flush" >
+              <li class="list-group-item" style="background-color:transparent;border:0;border-bottom:1px solid #178CD4">
+                  <a href="/details/{{script.slug}}" ><h4 class="mb-1">{{ script.title }}</h4></a>
+                  <p class="mb-1 small">{{ script.description }}</p>
+                  <p class="mb-1 small"><i>Created by {{script.author}}</i></p>
+              </li>
+            </ul>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </section>
+  </section>
+</div>

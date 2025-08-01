@@ -1,0 +1,15 @@
+---
+layout: none
+---
+Oops! Don't know that command. Try one of these?
+
+#### The Basics ####
+
+{% for script in site.api %}{{script.slug}} | {{script.description}}
+{% endfor %}
+
+
+#### peep Recipes ####
+
+{% for script in site.recipes %}{{script.slug}} | {{script.description}}
+{% endfor %}

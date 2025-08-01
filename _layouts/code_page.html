@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  <section class="section section-lg">
+    <section class="section">
+      <img src="/assets/img/path4.png" class="path">
+      <div class="container" id="app">
+        <h1 class="text-center">{{page.title}}</h1>
+        <div class="row">
+          <div class="col-12">
+            {{content}}
+            <h2 class="text-center" style="margin-top:24px">The Script</h2>
+<pre class="text-left" style="padding:12px;background-color:#000000;border-radius:8px;color:yellow">
+peep {{page.api | replace: "/api/",""}}
+</pre>
+            <pre>
+              <code class="sh" id="scriptCode">
+
+              </code>
+            </pre>
+          </div>
+      </div>
+    </section>
+  </section>
+</div>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/github-gist.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+$(function(){
+  $.get("https://tek.pub/{{page.api}}").then(res => {
+    $("#scriptCode").text(res);
+    $('#scriptCode').each(function(i, e) {hljs.highlightBlock(e)});
+  })
+})
+</script>

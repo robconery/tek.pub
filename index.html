@@ -1,0 +1,67 @@
+---
+title: Home
+layout: default
+---
+
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header">
+      <img src="/assets/img/blob.png" class="path">
+      <img src="/assets/img/path2.png" class="path2">
+      <img src="/assets/img/triunghiuri.png" class="shapes triangle">
+      <img src="/assets/img/waves.png" class="shapes wave">
+      <img src="/assets/img/patrat.png" class="shapes squares">
+      <img src="/assets/img/cercuri.png" class="shapes circle">
+      <div class="content-center">
+        <div class="row justify-content-between align-items-center text-left">
+
+          <div class="col-lg-7">
+            <h1 class="text-white">Build Prompts Easily</h1>
+            <p class="text-white mb-3">
+              Search for what you want, copy the script, and run it in your terminal. Don't see what you want?
+              <a href="https://github.com/robconery/peep/issues">Let us know</a>. Our PRs are open as well.
+            </p>
+            <p>
+              Install peep in bash:
+              <pre class="text-left" style="padding:12px;background-color:#000000;border-radius:8px;color:yellow">
+echo "function peep() { curl -sL https://tek.pub/api/\$1;}" >> \
+~/.bashrc && source ~/.bashrc</pre>
+            </p>
+            <p>
+              Install peep in zshell:
+              <pre class="text-left" style="padding:12px;background-color:#000000;border-radius:8px;color:#56A50B">
+echo "function peep() { curl -sL https://tek.pub/api/\$1;}" >> \
+~/.zshrc && source ~/.zshrc</pre>
+            </p>
+            <p>
+              Run it:
+              <pre class="text-left" style="padding:12px;background-color:#000000;border-radius:8px;color:orange">
+peep help
+peep list
+peep sequelize</pre>
+            </p>
+            <p>
+              <a href="/scripts" class="btn btn-success">Scripts</a>
+            </p>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block d-md-block">
+            <img id="random-person" src="/assets/img/icons/person-1.png" alt="Person image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+<script>
+$(function(){
+  hljs.initHighlightingOnLoad();
+  
+  // Random person icon rotation
+  const randomPersonNumber = Math.floor(Math.random() * 8) + 1;
+  const randomPersonImg = document.getElementById('random-person');
+  if (randomPersonImg) {
+    randomPersonImg.src = `/assets/img/icons/person-${randomPersonNumber}.png`;
+  }
+})
+</script>
