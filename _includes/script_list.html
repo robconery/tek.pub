@@ -4,9 +4,9 @@
 
 Usage: peep [script_name]
 
-{% for script in site.api %}
+{% for script in site.api %}{% assign excluded_slugs = "index,list,help" | split: "," %}{% unless excluded_slugs contains script.slug %}
 -------------------------------------
-Script: {{script.slug}}
-Desc:   {{script.description}}
-Info:   https://tek.pub/details/{{script.slug}}
-{% endfor %}
+Script:   {{script.slug}}
+Command:  peep {{script.slug}}
+Desc:     {{script.description}}
+Info:     https://tek.pub/details/{{script.slug}}{% endunless %}{% endfor %}
