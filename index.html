@@ -61,10 +61,25 @@ $(function(){
   hljs.initHighlightingOnLoad();
   
   // Random person icon rotation
-  const randomPersonNumber = Math.floor(Math.random() * 8) + 1;
+  let currentPersonNumber = Math.floor(Math.random() * 8) + 1;
   const randomPersonImg = document.getElementById('random-person');
+  
   if (randomPersonImg) {
-    randomPersonImg.src = `/assets/img/icons/person-${randomPersonNumber}.png`;
+    randomPersonImg.src = `/assets/img/icons/person-${currentPersonNumber}.png`;
+    
+    // Fade to new random image every 10 seconds
+    setInterval(() => {
+      let newPersonNumber;
+      do {
+        newPersonNumber = Math.floor(Math.random() * 8) + 1;
+      } while (newPersonNumber === currentPersonNumber);
+      
+      $(randomPersonImg).fadeOut(500, function() {
+        randomPersonImg.src = `/assets/img/icons/person-${newPersonNumber}.png`;
+        currentPersonNumber = newPersonNumber;
+        $(randomPersonImg).fadeIn(500);
+      });
+    }, 3000);
   }
 })
 </script>
