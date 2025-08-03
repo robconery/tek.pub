@@ -33,7 +33,7 @@ list | Don't know what you're looking for? Here's a list
 ... rest of stuff
 ```
 
-WHen you see a script you want to use, just call it directly:
+When you see a script you want to use, just call it directly:
 
 ```
 peep react-component
