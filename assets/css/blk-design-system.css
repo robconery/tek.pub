@@ -16531,6 +16531,10 @@ textarea.form-control:active {
   max-height: 200px;
 }
 
+.landing-page .page-header h1 {
+  padding-top: 100px;
+}
+
 .landing-page .section:first-of-type .path {
   left: -110px;
   max-width: 60%;
